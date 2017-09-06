@@ -1,24 +1,42 @@
 
 @import "compass/reset";
-
-$primaryColor: #ff5f14;
-
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');$primaryColor: #ff5f14;
+// * {
+//   border: 1px solid green !important;
+// }
 html {
   overflow-y: scroll;
 }
 body {
+  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif !important;
   background-color: rgba(200, 200, 200, .1) !important;
 }
 // navigation bar
 nav {
   background-color: white;
-  min-width: 400px;
+  min-width: 500px;
   width: auto;
+  font-size: 1.3em;
+  letter-spacing: 1px;
   border-top: 3px solid $primaryColor !important;
+  box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
+  height: 100px;
+
+  #extLinks {
+    padding-left: 7px;
+    padding-top: 10px;
+    font-size: 1.2em;
+    a {
+      color: black;
+      margin: 0 6px;
+    }
+  }
   div {
     ul {
-      margin-left: 7%;
+      padding-left: 80px;
       li {
+        padding: 0;
         a {
           margin-top: 10px;
           color: black;
@@ -37,25 +55,24 @@ nav {
   button {
     position: relative;
     top: -5px;
-    font-size: 2em;
     box-shadow: 0 0 2px rgba(100, 100, 100, .5);
     padding: 3px;
     width: 50px;
-    height: 50px;
+    height: 40px;
     i {
       position: relative;
       top: -5px;
     }
   }
   .navbar-brand {
-  	font-size: 25px;
-  	letter-spacing: 3px;
+  	font-size: 2em;
+  	letter-spacing: 5px;
   	text-transform: uppercase;
   	color: #000000;
-  	margin-top: 10px;
-    position: relative;
-    float: right;
-    right: 3%;
+  	margin-top: 22px;
+    position: absolute;
+    right: 10px;
+    // right: 3%;
     &:focus {
       color:black;
     }
@@ -65,25 +82,53 @@ nav {
   }
   .navbar-toggle {
   	float: left;
-    margin: 15px 0 0 65px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 1.3em;
   }
   .container-fluid {
-    border-bottom: 1px solid rgba(255, 95, 20, .9);
-    box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
+    background-color: white;
+    // margin-top: 90px;
+    // border-bottom: 2px solid rgba(255, 95, 20, .9);
+    // box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
+  }
+  .collapse.in {
+    max-height: 500px !important;
+  }
+  .in {
+    border-bottom: 2px solid rgba(255, 95, 20, .9);
+
   }
 }
+
+@media (max-width: 1000px) {
+  .navbar-brand {
+    visibility: hidden;
+  }
+}
+@media (max-width: 766px) {
+  .navbar-nav {
+    padding-top: 40px;
+    // box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
+    // border-bottom: 2px solid rgba(255, 95, 20, .9);
+  }
+  #extLinks {
+    visibility: hidden;
+  }
+}
+
 // homepage
 #bg {
-  height: 80vh;
   border-bottom: 3px solid $primaryColor;
   outline: 1px solid rgba(0, 0, 0, .3);
   #aboutMe {
     position: relative;
-    top: 43px;
-    width: auto;
-    min-width: 300px;
-    max-width: 700px;
+    width: 100%;
+    min-height: 600px;
+    min-width: 600px;
     padding: 50px;
+    padding-left: 25%;
     font-size: 16px;
     margin: 0 auto;
     color: hsl(19, 17%, 99%);
@@ -98,7 +143,8 @@ nav {
     position: relative;
     width: 60%;
     margin: 0 auto;
-    top: 170px;
+    top: -120px;
+    max-width: 800px;
 
     #aboutBox {
       box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
@@ -126,6 +172,9 @@ nav {
     margin-top: 30px;
     color: black;
     padding: 5px;
+    h3 {
+      font-size: 2.5em;
+    }
   }
   #techList {
     margin-top: 20px;
@@ -134,7 +183,7 @@ nav {
 }
 
 .selfie {
-  height: 100vh;
+  height: 80vh;
   position: relative;
   top: -43px;
   background: linear-gradient(
@@ -325,7 +374,7 @@ nav {
 
 
 .viewFade {
-  margin-top: 100px;
+  margin-top: 140px;
   -webkit-animation: fadein .2s linear forwards;
   animation: fadein .2s linear forwards;
 }
@@ -344,23 +393,25 @@ nav {
 }
 .about.animated:nth-child(2) { animation-delay: .3s; }
 .about.animated:nth-child(3) { animation-delay: 1.8s; }
+.about.animated:nth-child(4) { animation-delay: 3.5s; }
+
 .list {
   opacity: 0;
 }
 .list.animated {
   animation-name: fadeInDown;
   animation-duration: 1s;
-  animation-delay: 4s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
-.list.animated:nth-child(2) { animation-delay: 4.6s; }
-.list.animated:nth-child(3) { animation-delay: 5.2s; }
-.list.animated:nth-child(4) { animation-delay: 5.8s; }
-.list.animated:nth-child(5) { animation-delay: 6.4s; }
-.list.animated:nth-child(6) { animation-delay: 7.0s; }
-.list.animated:nth-child(7) { animation-delay: 7.6s; }
-.list.animated:nth-child(8) { animation-delay: 8.2s; }
-.list.animated:nth-child(9) { animation-delay: 8.8s; }
+.list.animated:nth-child(2) { animation-delay: 5.6s; }
+.list.animated:nth-child(3) { animation-delay: 6.2s; }
+.list.animated:nth-child(4) { animation-delay: 6.8s; }
+.list.animated:nth-child(5) { animation-delay: 7.4s; }
+.list.animated:nth-child(6) { animation-delay: 8.0s; }
+.list.animated:nth-child(7) { animation-delay: 8.6s; }
+.list.animated:nth-child(8) { animation-delay: 9.2s; }
+.list.animated:nth-child(9) { animation-delay: 9.8s; }
 
 @keyframes fadeInDown {
   from {

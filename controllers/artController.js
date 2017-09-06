@@ -9,7 +9,6 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
 
   loadDrawings();
 
-
   //backward/forward buttons in image display
   $scope.left = function() {
     //stop zoom to allow img change
@@ -91,7 +90,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
           $navbar.collapse('hide');
       }
   });
-  
+
 
   //zoom on image display hover
   $(document).ready(function(){
