@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>Image Gallery</title>
+	<link href="styles/stylesheets/screen.css" rel="stylesheet"media="screen, projection" type="text/css" />
+	<link rel="stylesheet" href="app/lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+	<link rel="stylesheet" href="app/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script src="app/lib/angular.min.js"></script>
+	<script src="app/lib/angular-route.min.js"></script>
+	<script src="app/lib/jquery-3.2.1.min.js"></script>
+	<script src="app/lib/zoom-master/jquery.zoom.js"></script>
+  <script src="app/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="app/lib/angular-messages.js"></script>
+</head>
+<body >
+
+	<header ng-include="'views/navbar.html'"></header>
+	<div class="viewFade" ng-view></div>
+
+	<script src="app/app.js"></script>
+	<script src="directives/artGall.directive.js"></script>
+	<script src="directives/artDisp.directive.js"></script>
+	<script src="controllers/artController.js"></script>
+	<script src="controllers/contactController.js"></script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<script type="text/ng-template" id="error-messages">
+  <div ng-message="required">This field is required</div>
+  <div ng-message="minlength">This field is too short</div>
+  <div ng-message="email">Please enter a valid email</div>
+</script>
+
+<div id="contactPage">
+  <h4 id="instructions">Would you like to send me a message? Fillout this form!</h4>
+
+
+  <div class="wrapper" ng-controller="contactController">
+    <div class="one">
+      <div>
+      <form
+        name="form"
+        novalidate>
+          <label>First name
+          <input
+            type="text"
+            placeholder="Amanda"
+            name="first"
+            ng-class="{'invalid': (form.first.$error && form.first.$touched), 'valid': (form.first.$valid && form.first.$touched)}"
+            class="form-control"
+            ng-model="formData.firstName"
+            ng-minlength="2"
+            maxlength="20"
+            required>
+            </label>
+
+            <div class="errorMessage">
+              <div ng-if="form.first.$touched" ng-messages="form.first.$error" role="alert">
+                <div ng-messages-include="error-messages">
+                </div>
+              </div>
+            </div>
+
+          <label>Last Name
+          <input
+            type="text"
+            placeholder="Hugankiss"
+            name="last"
+            ng-class="{'invalid': (form.last.$error && form.last.$touched), 'valid': (form.last.$valid && form.last.$touched)}"
+            class="form-control"
+            ng-model="formData.lastName"
+            ng-minlength="2"
+            maxlength="20"
+            required>
+          </label>
+
+          <div class="errorMessage">
+            <div ng-if="form.last.$touched" ng-messages="form.last.$error" role="alert">
+              <div ng-messages-include="error-messages">
+              </div>
+            </div>
+          </div>
+
+          <label>Contact Email
+          <input
+            type="email"
+            placeholder="Seymour.Butz@gmail.com"
+            name="email"
+            ng-class="{'invalid': (form.email.$error && form.email.$touched), 'valid': (form.email.$valid && form.email.$touched)}"
+            class="form-control"
+            ng-model="formData.contactEmail"
+            maxlength="50"
+            required>
+          </label>
+
+          <div class="errorMessage">
+            <div ng-if="form.email.$touched" ng-messages="form.email.$error" role="alert">
+              <div ng-messages-include="error-messages">
+              </div>
+            </div>
+          </div>
+
+          <label>What would you like to say?
+          <textarea
+          placeholder="Your message"
+          name="message"
+          ng-class="{'invalid': (form.message.$error && form.message.$touched), 'valid': (form.message.$valid && form.message.$touched)}"
+          class="form-control"
+          ng-model="formData.contactMessage"
+          maxlength="1000"
+          rows="5"
+          cols="30"
+          required>
+          </textarea>
+          </label>
+
+          <div class="errorMessage">
+            <div ng-if="form.message.$touched" ng-messages="form.message.$error" role="alert">
+              <div ng-messages-include="error-messages">
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+
+</div>
+
+
+<div class="two">
+  <div id="previewBox">
+    <div id="title">
+      <i class="fa fa-check-square" ng-if="form.$valid" aria-hidden="true"></i>
+      <h4>PREVIEW</h4>
+    </div>
+
+    <div id="preview">
+      <p>
+        From: <strong>{{formData.firstName}} {{formData.lastName}}</strong>
+      </p>
+      <p>
+        Contact at <strong>{{formData.contactEmail}}</strong>
+      </p>
+      <p>
+        Message: <strong>{{formData.contactMessage}}</strong>
+      </p>
+
+      <button class="btn btn-default" type="submit" ng-disabled="form.$invalid" ng-click="submitMsg()">Send</button>
+
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
