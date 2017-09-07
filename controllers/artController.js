@@ -3,7 +3,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
   var i = 1;
   $scope.limit = 8;
   $scope.loadBtn = true;
-  var imgNum = Math.floor(Math.random()* 38 + 1);
+  var imgNum = Math.floor(Math.random()* 50);
   $scope.drawings = [];
   $scope.image = "drawings/" + imgNum + ".jpg";
 
@@ -15,7 +15,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
     $('#ex1').trigger('zoom.destroy');
 
     if(imgNum === 1) {
-      imgNum = 39;
+      imgNum = 50;
     }
 
     //start zoom to use new img src
@@ -32,7 +32,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
     //stop zoom to allow img change
     $('#ex1').trigger('zoom.destroy');
 
-    if(imgNum === 38) {
+    if(imgNum === 49) {
       imgNum = 0;
     }
     //start zoom to use new img src
