@@ -65,7 +65,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
   //"load more" btn
   $scope.loadMore = function() {
     $scope.limit *= 2;
-    if($scope.limit > 38) {
+    if($scope.limit > $scope.drawings.length) {
       $scope.loadBtn = false;
     }
   }
@@ -73,7 +73,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
 
   //load all drawings in folder
   function loadDrawings() {
-    while(i < 39) {
+    while(i < 50) {
       drawing = "drawings/" + i + ".jpg";
       i++;
       $scope.drawings.push(drawing);

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-/* line 5, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -210,7 +210,6 @@ nav .in {
 }
 /* line 135, ../sass/screen.scss */
 #bg #aboutMe ul {
-  list-style: none;
   padding: 0;
 }
 /* line 141, ../sass/screen.scss */
@@ -220,9 +219,10 @@ nav .in {
   width: 60%;
   margin: 0 auto;
   top: -120px;
+  font-size: 1.3em;
   max-width: 800px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 #bg #summary #aboutBox {
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
   background-color: white;
@@ -233,40 +233,54 @@ nav .in {
   color: rgba(0, 0, 0, 0.9);
   min-width: 460px;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #bg #summary #aboutBox h2 {
   color: black;
 }
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #bg #summary #aboutBox p {
   font-size: 14px;
   opacity: .8;
 }
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #bg #summary #aboutBox span {
   font-weight: bold;
   color: black;
 }
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #bg #essay {
   margin-top: 30px;
   color: black;
   padding: 5px;
 }
-/* line 175, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
+#bg #essay ul {
+  padding-left: 20px;
+}
+/* line 178, ../sass/screen.scss */
+#bg #essay ul li {
+  padding-left: 5px;
+  list-style-type: square;
+}
+/* line 183, ../sass/screen.scss */
 #bg #essay h3 {
   font-size: 2.5em;
 }
-/* line 179, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
+#bg #essay h4 {
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+/* line 191, ../sass/screen.scss */
 #bg #techList {
   margin-top: 20px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #bg #techList ul {
   padding: 0 20px;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .selfie {
   height: 80vh;
   position: relative;
@@ -276,13 +290,13 @@ nav .in {
   background-position: center center;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 #mainContent {
   padding: 0 50px;
   max-width: 1300px;
   margin: 0 auto;
 }
-/* line 203, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #mainContent art-disp div {
   background: black;
   margin-bottom: 20px;
@@ -297,7 +311,7 @@ nav .in {
   object-fit: contain;
   max-height: 700px;
 }
-/* line 216, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #mainContent art-disp div img {
   overflow: auto;
   display: inline-block;
@@ -308,7 +322,7 @@ nav .in {
   min-height: 300px;
   max-height: 600px;
 }
-/* line 226, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #mainContent art-disp div button {
   vertical-align: top;
   display: inline-block;
@@ -326,43 +340,43 @@ nav .in {
   color: #ff5f14;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 243, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #mainContent art-disp div #left {
   left: 0;
 }
-/* line 244, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #mainContent art-disp div #right {
   right: 0;
 }
-/* line 245, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #mainContent art-disp div #ex1 {
   width: 80%;
 }
-/* line 248, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 #mainContent art-disp div .zoom {
   display: inline-block;
   position: relative;
 }
-/* line 252, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 #mainContent art-disp div .zoom img {
   display: inline-block;
 }
-/* line 255, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #mainContent art-disp div .zoom img::selection {
   background-color: transparent;
 }
-/* line 259, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 #mainContent art-gall {
   flex: 1;
 }
-/* line 261, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 #mainContent art-gall .thumbnail {
   height: 275px;
   outline: 0;
   border: none;
   position: relative;
 }
-/* line 266, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 #mainContent art-gall .thumbnail img {
   object-fit: cover;
   height: 265px;
@@ -376,24 +390,24 @@ nav .in {
   border: 2px solid grey;
   box-shadow: 0 3px 10px rgba(100, 100, 100, 0.5);
 }
-/* line 280, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 #mainContent art-gall button {
   width: 100%;
   font-size: 1.5em;
   border: 1px solid #ff5f14;
   margin-bottom: 30px;
 }
-/* line 285, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #mainContent art-gall button:focus {
   outline: none;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 #instructions {
   text-align: center;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 #contactPage {
   padding: 0 100px;
   min-width: 500px;
@@ -403,7 +417,7 @@ nav .in {
   font-size: 16px;
   line-height: 1.5em;
 }
-/* line 299, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #contactPage .wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -411,7 +425,7 @@ nav .in {
   grid-auto-rows: minmax(100px, auto);
   height: 600px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #contactPage .wrapper .one {
   grid-column: 1;
   grid-row: 1;
@@ -420,38 +434,38 @@ nav .in {
   overflow: auto;
   min-width: 150px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 324, ../sass/screen.scss */
 #contactPage .wrapper .one div {
   width: auto;
   display: block;
   text-align: center;
   overflow: auto;
 }
-/* line 317, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 #contactPage .wrapper .one div form {
   margin-top: 20px;
   text-align: center;
 }
-/* line 320, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #contactPage .wrapper .one div form .errorMessage {
   font-size: 13px;
   height: 25px;
 }
-/* line 324, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 #contactPage .wrapper .one div form .invalid {
   border: 2px solid red !important;
 }
-/* line 325, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #contactPage .wrapper .one div form .valid {
   border: 2px solid lightgreen !important;
 }
-/* line 329, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #contactPage .wrapper .two {
   grid-column: 2;
   grid-row: 1;
   display: block;
 }
-/* line 333, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox {
   border-radius: 2px;
   height: auto;
@@ -466,16 +480,16 @@ nav .in {
   display: block;
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
 }
-/* line 346, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox button {
   margin-bottom: 20px;
 }
-/* line 347, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #preview {
   padding: 10px 25px;
   background-color: rgba(200, 200, 200, 0.1);
 }
-/* line 351, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title {
   width: auto;
   height: 40px;
@@ -486,7 +500,7 @@ nav .in {
   margin-left: 25px;
   text-align: left;
 }
-/* line 360, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title i {
   color: lightgreen;
   font-size: 25px;
@@ -496,12 +510,12 @@ nav .in {
   right: 10px;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 #success {
   text-align: center;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .viewFade {
   margin-top: 140px;
   -webkit-animation: fadein .2s linear forwards;
@@ -519,39 +533,39 @@ nav .in {
     opacity: 1;
   }
 }
-/* line 386, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .about {
   opacity: 0;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .about.animated {
   animation-name: intro;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-/* line 394, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .about.animated:nth-child(2) {
   animation-delay: .3s;
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .about.animated:nth-child(3) {
   animation-delay: 1.8s;
 }
 
-/* line 396, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .about.animated:nth-child(4) {
   animation-delay: 3.5s;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .list {
   opacity: 0;
 }
 
-/* line 401, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .list.animated {
   animation-name: fadeInDown;
   animation-duration: 1s;
@@ -559,42 +573,42 @@ nav .in {
   animation-fill-mode: forwards;
 }
 
-/* line 407, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .list.animated:nth-child(2) {
   animation-delay: 5.6s;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .list.animated:nth-child(3) {
   animation-delay: 6.2s;
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .list.animated:nth-child(4) {
   animation-delay: 6.8s;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .list.animated:nth-child(5) {
   animation-delay: 7.4s;
 }
 
-/* line 411, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .list.animated:nth-child(6) {
   animation-delay: 8.0s;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .list.animated:nth-child(7) {
   animation-delay: 8.6s;
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .list.animated:nth-child(8) {
   animation-delay: 9.2s;
 }
 
-/* line 414, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .list.animated:nth-child(9) {
   animation-delay: 9.8s;
 }
@@ -619,7 +633,7 @@ nav .in {
     transform: none;
   }
 }
-/* line 436, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -631,14 +645,14 @@ nav .in {
   transition-property: transform;
 }
 
-/* line 446, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
 }
 
-/* line 453, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -653,13 +667,13 @@ nav .in {
   transition-timing-function: ease-out;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 478, ../sass/screen.scss */
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
   color: black;
 }
-/* line 470, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .hvr-float:hover i, .hvr-float:focus i, .hvr-float:active i {
   color: #ff5f14;
 }
