@@ -1,0 +1,68 @@
+{
+  "profile":
+    {
+      "title": "Profile",
+      "p": "Front-end web developer, experienced with large variety of web technologies. Based out of Maryland/ Virginia/ Washington DC Metropolitan area. Specialties include responsive web design, high quality UI/ UX building, and on-time delivery of projects & assignments."
+    },
+
+  "education":
+    {
+      "title": "Education",
+      "p": "University of Maryland, Baltimore County. Bachelor of Science in Computer Science 2016. Concentration in Web Development"
+    },
+
+  "tech":
+    {
+      "title": "Technical Skills",
+      "section": [
+        {"header": "Programming languages", "info": "JavaScript, CSS, Sass/LESS, HTML, JSON, AJAX"},
+        {"header": "Frameworks/Libraries", "info": "AngularJS, Node.js, jQuery, Bootstrap"},
+        {"header": "Software", "info": "Adobe Creative Suite, Microsoft Office, Adobe Acrobat, Terminal, ATOM, Sublime Text 3, Compass"},
+        {"header": "Operating Systems", "info": "Microsoft Windows, Mac OS X"},
+        {"header": "Miscellaneous", "info": "Agile workflows, SCRUM framework, responsive web design, UI/UX design"}
+      ]
+    },
+
+  "exp":
+    {
+      "title": "Experience",
+      "jobs": [
+        {
+          "comp": "MyGym",
+          "pos": "Web Developer (July 2015 - Current)",
+          "duties": [
+            "Designed and created responsive features and pages to branch website using AngularJS, HTML, and CSS",
+            "Crafted high quality components using in-line, CSS3, and Bootstrap—in accordance with best practices",
+            "Resolved technical issues by efficiently troubleshooting code, utilizing Node.js, and accessing every available knowledgebase",
+            "Effectively prioritized between multiple web development and maintenance projects",
+            "Practiced SCRUM methodology alongside our Creative Director and instructional team",
+            "Worked with Lead Developer & Creative Director to create the best user-experience for our company’s online presence",
+            "Quickly handled expedited requests and deadlines using Agile program management<",
+            "Enhanced the visual presentation of the content & layouts of our company website by unit and integration testing every update",
+            "Updated content, graphics, and code when assisting in managing email blast programs"
+            ]
+        },
+        {
+          "comp": "Renaissance Art Center",
+          "pos": "Programming Instructor (April 2012 - June 2015)",
+          "duties": [
+            "Effectively articulated programming foundations & techniques to young audiences",
+            "Enriched problem-solving skills of students while aiding them in the development of their own projects & games",
+            "Presented comprehensive lessons to large classrooms of students with varying degrees of skills",
+            "Created an organized curriculum covering a broad range of programming techniques with a team of instructors",
+            "Built lasting relationships with students and parents while engaging about their progress and accomplishments",
+            "Displayed a strong grasp of CS fundamentals while simplifying them enough for young students to understand"
+            ]
+        }
+      ]
+    },
+
+
+
+  "": {"title": "", "p": ""},
+  "": {"title": "", "p": ""},
+  "": {"title": "", "p": ""},
+  "": {"title": "", "p": ""}
+
+
+}

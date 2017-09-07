@@ -64,7 +64,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
 
   //"load more" btn
   $scope.loadMore = function() {
-    $scope.limit *= 2;
+    $scope.limit += 8;
     if($scope.limit > $scope.drawings.length) {
       $scope.loadBtn = false;
     }
@@ -96,6 +96,11 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
   $(document).ready(function(){
     $('#ex1').zoom();
   });
+
+  $http.get('views/data/aboutMe.json').then(function(data) {
+    $scope.vakdata = data.data;
+    console.log($scope.vakdata)
+  })
 
 }
 
