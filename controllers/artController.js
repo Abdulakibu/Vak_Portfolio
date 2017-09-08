@@ -1,4 +1,9 @@
-function artController($scope, $http, $location, $window, $timeout, $route) {
+app.controller('artController', ['$scope', '$http', '$location', '$window', '$timeout', '$route', function ($scope, $http, $location, $window, $timeout, $route) {
+
+  $scope.getFrameSrc= function(src) {
+    return 'https://www.youtube.com/embed/1-HpXcO9NdU?rel=0'
+  }
+  $scope.videos = ["https://www.youtube.com/embed/1-HpXcO9NdU?rel=0", "dgfdgs"];
 
   var i = 1;
   $scope.limit = 8;
@@ -97,15 +102,24 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
     $('#ex1').zoom();
   });
 
+  //retrieve json data for home page resume
   $http.get('views/data/aboutMe.json').then(function(data) {
     $scope.vakdata = data.data;
-    console.log($scope.vakdata)
   })
 
-}
+}]);
 
 
 
-angular
-  .module('app')
-  .controller('artController', artController)
+
+
+app.controller('contactController', ['$scope', '$location', '$timeout', function ($scope, $location, $timeout) {
+    //contact-form submit success
+    $scope.submitMsg = function() {
+      $location.path('contact-success');
+      //redirect to home page
+      $timeout(function() {
+        $location.path('home');
+      }, 2000);
+    }
+  }])

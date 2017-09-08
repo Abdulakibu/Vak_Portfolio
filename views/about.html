@@ -30,6 +30,8 @@
         <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Bootstrap</li>
         <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Font-Awesome</li>
         <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JavaScript</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JSON</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> AJAX</li>
         <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> CSS</li>
         <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> HTML</li>
       </ul>
@@ -66,13 +68,24 @@
 
         <div ng-repeat="dut in job.duties">
           <ul>
-            <li>
-              {{dut}}
-            </li>
+            <li>{{dut}}</li>
           </ul>
         </div>
 
       </div>
+
+      <h3>{{vakdata.trivia.title}}</h3>
+      <div ng-repeat="info in vakdata.trivia.hobbies">
+        <h4>{{info.fact}}</h4>
+        <p>{{info.info}}</p>
+        <div ng-repeat="item in info.peruList">
+          <ul>
+            <li>{{item}}</li>
+          </ul>
+        </div>
+      </div>
+
+
 
 
 

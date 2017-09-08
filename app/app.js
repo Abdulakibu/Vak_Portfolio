@@ -10,6 +10,10 @@ app.config(['$routeProvider', function($routeProvider) {
         templateUrl: 'views/artGallery.html',
         controller: 'artController',
       })
+      .when('/videos', {
+        templateUrl: 'views/videoGall.html',
+        controller: 'artController',
+      })
       .when('/contact', {
         templateUrl: 'views/contact.html',
         controller: 'artController',
