@@ -1,14 +1,18 @@
-function artController($scope, $http, $location, $window, $timeout, $route) {
+app.controller('artController', ['$scope', '$http', '$location', '$window', '$timeout', '$route', function ($scope, $http, $location, $window, $timeout, $route) {
+
+  $scope.getFrameSrc= function(src) {
+    return 'https://www.youtube.com/embed/1-HpXcO9NdU?rel=0'
+  }
+  $scope.videos = ["https://www.youtube.com/embed/1-HpXcO9NdU?rel=0", "dgfdgs"];
 
   var i = 1;
   $scope.limit = 8;
   $scope.loadBtn = true;
-  var imgNum = Math.floor(Math.random()* 38 + 1);
+  var imgNum = Math.floor(Math.random()* 50);
   $scope.drawings = [];
   $scope.image = "drawings/" + imgNum + ".jpg";
 
   loadDrawings();
-
 
   //backward/forward buttons in image display
   $scope.left = function() {
@@ -16,7 +20,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
     $('#ex1').trigger('zoom.destroy');
 
     if(imgNum === 1) {
-      imgNum = 39;
+      imgNum = 50;
     }
 
     //start zoom to use new img src
@@ -33,7 +37,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
     //stop zoom to allow img change
     $('#ex1').trigger('zoom.destroy');
 
-    if(imgNum === 38) {
+    if(imgNum === 49) {
       imgNum = 0;
     }
     //start zoom to use new img src
@@ -65,8 +69,8 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
 
   //"load more" btn
   $scope.loadMore = function() {
-    $scope.limit *= 2;
-    if($scope.limit > 38) {
+    $scope.limit += 8;
+    if($scope.limit > $scope.drawings.length) {
       $scope.loadBtn = false;
     }
   }
@@ -74,7 +78,7 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
 
   //load all drawings in folder
   function loadDrawings() {
-    while(i < 39) {
+    while(i < 50) {
       drawing = "drawings/" + i + ".jpg";
       i++;
       $scope.drawings.push(drawing);
@@ -91,17 +95,31 @@ function artController($scope, $http, $location, $window, $timeout, $route) {
           $navbar.collapse('hide');
       }
   });
-  
+
 
   //zoom on image display hover
   $(document).ready(function(){
     $('#ex1').zoom();
   });
 
-}
+  //retrieve json data for home page resume
+  $http.get('views/data/aboutMe.json').then(function(data) {
+    $scope.vakdata = data.data;
+  })
+
+}]);
 
 
 
-angular
-  .module('app')
-  .controller('artController', artController)
+
+
+app.controller('contactController', ['$scope', '$location', '$timeout', function ($scope, $location, $timeout) {
+    //contact-form submit success
+    $scope.submitMsg = function() {
+      $location.path('contact-success');
+      //redirect to home page
+      $timeout(function() {
+        $location.path('home');
+      }, 2000);
+    }
+  }])

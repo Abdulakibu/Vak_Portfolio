@@ -5,7 +5,7 @@ function artGall() {
     cursor: 'pointer',
     template: `
     <div
-    class="col-lg-3 col-sm-6 task-item"
+    class="col-lg-3 col-sm-6"
     ng-repeat="drawing in drawings | limitTo: limit">
       <div
       class="thumbnail" >

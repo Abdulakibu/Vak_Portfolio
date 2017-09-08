@@ -1,5 +1,5 @@
-<div id="bg" ng-init="home = true;" ng-class="{'selfie' : home}">
-  <div id="aboutMe">
+<div id="bg" ng-init="home = true;" >
+  <div id="aboutMe" ng-class="{'selfie' : home}">
     <h1>Hi, I'm Vak</h1>
     <div class="about animated">
       <h3 >
@@ -17,42 +17,78 @@
         <li>
           I travel the world for fun!
         </li>
-        <li id="techList">
-          How did I build portfolio? Let's find out!
-          <ul>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> AngularJS</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> SASS</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Compass</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JQuery</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Bootstrap</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Font-Awesome</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JavaScript</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> CSS</li>
-            <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> HTML</li>
-          </ul>
-        </li>
+
+      </ul>
+    </div>
+    <div class="about animated" id="techList">
+      How did I build portfolio? Let's find out!
+      <ul>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> AngularJS</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> SASS</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Compass</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JQuery</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Bootstrap</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> Font-Awesome</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JavaScript</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> JSON</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> AJAX</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> CSS</li>
+        <li class="list animated"><i class="fa fa-check" aria-hidden="true"></i> HTML</li>
       </ul>
     </div>
 
 
   </div>
-  
-  <!-- <div id="summary">
+
+  <div id="summary">
     <div id="aboutBox">
       <h2>Vakhtang Tarielovich Kobiashvili</h2>
       <p>Born in <span>Tbilisi, Georgia</span></p>
       <p>Attended <span>University of Maryland, Baltimore County</span></p>
     </div>
     <div id="essay">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      <h3>{{vakdata.profile.title}}</h3>
+      <p>{{vakdata.profile.p}}</p>
+
+      <h3>{{vakdata.education.title}}</h3>
+      <p>{{vakdata.education.p}}</p>
+
+      <h3>{{vakdata.tech.title}}</h3>
+      <p ng-repeat="skill in vakdata.tech.section">
+          <strong>{{skill.header}}:</strong> {{skill.info}}
       </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+
+      <h3>{{vakdata.exp.title}}</h3>
+      <div ng-repeat="job in vakdata.exp.jobs">
+
+        <h4><strong>{{job.comp}}</strong></h4>
+
+        <p>{{job.pos}}</p>
+
+        <div ng-repeat="dut in job.duties">
+          <ul>
+            <li>{{dut}}</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h3>{{vakdata.trivia.title}}</h3>
+      <div ng-repeat="info in vakdata.trivia.hobbies">
+        <h4>{{info.fact}}</h4>
+        <p>{{info.info}}</p>
+        <div ng-repeat="item in info.peruList">
+          <ul>
+            <li>{{item}}</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
     </div>
-  </div> -->
+  </div>
 </div>

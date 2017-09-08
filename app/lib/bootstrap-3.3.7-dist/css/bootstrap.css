@@ -3972,7 +3972,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-left: -1px;
 }
 .nav {
-  padding-left: 0;
+  /*padding-left: 0;*/
   margin-bottom: 0;
   list-style: none;
 }
@@ -4205,7 +4205,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     overflow: visible !important;
   }
   .navbar-collapse.in {
-    overflow-y: visible;
+    overflow-y: scroll;
   }
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
