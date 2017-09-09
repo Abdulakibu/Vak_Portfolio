@@ -1,24 +1,18 @@
-<!-- <div class="thumbnail">
-  <img src="http://img.youtube.com/vi/1-HpXcO9NdU/0.jpg" />
-</div> -->
+<div id="videos">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe ng-src="{{url}}" class="embed-responsive-item" allowfullscreen="true"></iframe>
+  </div>
 
-<div
-  controller="artController as art"
-  class="col-lg-3 col-md-3 col-xs-6"
-  id="videos">
 
-  <iframe width="560" height="315" ng-src="{{getFrameSrc(media.src)}}" frameborder="0" allowfullscreen></iframe>
+    <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="pic in files">
 
-    <div
-    class="thumbnail" >
+      <div class="thumbnail">
 
-        <!-- <img
-        ng-click="drawingClick($index)"
-        id="{{$index}}"
-        ng-src="{{drawing}}"
-        class="hvr-grow"> -->
-        <img src="http://img.youtube.com/vi/1-HpXcO9NdU/0.jpg" class="hvr-grow"/>
-
+        <img ng-src="{{pic.url}}" id="{{$index}}" ng-click="changeVid($index)" class="hvr-grow"/>
 
     </div>
+    <p>
+      {{pic.title}}
+    </p>
+
 </div>

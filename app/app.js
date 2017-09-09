@@ -12,11 +12,11 @@ app.config(['$routeProvider', function($routeProvider) {
       })
       .when('/videos', {
         templateUrl: 'views/videoGall.html',
-        controller: 'artController',
+        controller: 'vidController',
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'artController',
+        controller: 'contactController',
       })
       .when('/contact-success', {
         templateUrl: 'views/contact-success.html',

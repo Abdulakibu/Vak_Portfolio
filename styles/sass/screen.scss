@@ -22,7 +22,6 @@ nav {
   border-top: 3px solid $primaryColor !important;
   box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
   height: 100px;
-
   #extLinks {
     padding-left: 7px;
     padding-top: 10px;
@@ -214,7 +213,7 @@ nav {
 #mainContent {
   padding: 0 50px;
   max-width: 1300px;
-  margin: 0 auto;
+  margin-top: 140px auto 0 auto;
   art-disp {
     div {
     	background:black;
@@ -302,8 +301,22 @@ nav {
     }
   }
 }
+
 #videos {
   flex: 1;
+  margin-top: 140px;
+  .embed-responsive {
+    background-color: black !important;
+    width: 70%;
+    max-height: 500px;
+    margin: 20px auto;
+    .embed-responsive-item {
+      width: 100%;
+    }
+  }
+  .col-xs-12 {
+    padding: 50px;
+  }
   .thumbnail {
     height: 275px;
     outline: 0;
@@ -331,7 +344,7 @@ nav {
   min-width: 500px;
   max-width: 800px;
   width: auto;
-  margin: 0 auto;
+  margin: 140px auto 0 auto;
   font-size: 16px;
   line-height: 1.5em;
   .wrapper {
@@ -413,8 +426,8 @@ nav {
 
 .viewFade {
   margin-top: 140px;
-  -webkit-animation: fadein .2s linear forwards;
-  animation: fadein .2s linear forwards;
+  -webkit-animation: fadein .3s linear forwards;
+  animation: fadein .3s linear forwards;
 }
 @keyframes fadein {
   0% { opacity: 0; }

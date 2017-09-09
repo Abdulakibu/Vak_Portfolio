@@ -1,10 +1,5 @@
 app.controller('artController', ['$scope', '$http', '$location', '$window', '$timeout', '$route', function ($scope, $http, $location, $window, $timeout, $route) {
 
-  $scope.getFrameSrc= function(src) {
-    return 'https://www.youtube.com/embed/1-HpXcO9NdU?rel=0'
-  }
-  $scope.videos = ["https://www.youtube.com/embed/1-HpXcO9NdU?rel=0", "dgfdgs"];
-
   var i = 1;
   $scope.limit = 8;
   $scope.loadBtn = true;
@@ -109,6 +104,37 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
 
 }]);
 
+
+app.controller('vidController', ['$scope', '$window', '$sce', function ($scope, $window, $sce) {
+
+  $scope.files = [];
+
+  $scope.vid = [
+      {title: "No Gracias Señor", id: "1-HpXcO9NdU", desc: "ddfgdfsggfd"},
+      {title: "You're Ridiculous", id: "dD70N6K1RSU", desc: "gffsdgfds"},
+      {title: "Swimmies & Bevs", id: "F8zwg6kXL2E", desc: "hfgjhgfj"},
+      {title: "Phoebe & Gio", id: "5RO2iG0Fuqo", desc: "rtyutjghf"},
+      {title: "Georgia Dance Party", id: "ZbV-fY7e4rA", desc: "gfhjghfjty"}
+    ];
+
+  $scope.url = $sce.trustAsResourceUrl("https://www.youtube.com/embed/" + $scope.vid[0].id + "?rel=0");
+
+  for(var i = 0; i < 5; i++) {
+    $scope.files[i] = {
+      title: $scope.vid[i].title,
+      url: "http://img.youtube.com/vi/" + $scope.vid[i].id + "/0.jpg",
+      desc: $scope.vid[i].desc
+    }
+  }
+
+
+
+  $scope.changeVid = function(index) {
+    $scope.url = $sce.trustAsResourceUrl($scope.vid.introVid + $scope.vid[index].id + $scope.vid.endVid);
+    $window.scrollTo(0, 0);
+  }
+
+}])
 
 
 
