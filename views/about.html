@@ -47,43 +47,53 @@
       <p>Attended <span>University of Maryland, Baltimore County</span></p>
     </div>
     <div id="essay">
+      <span>
+        <h3>{{vakdata.profile.title}}</h3>
+        <p>{{vakdata.profile.p}}</p>
+      </span>
 
-      <h3>{{vakdata.profile.title}}</h3>
-      <p>{{vakdata.profile.p}}</p>
+      <span>
+        <h3>{{vakdata.education.title}}</h3>
+        <p>{{vakdata.education.p}}</p>
+      </span>
 
-      <h3>{{vakdata.education.title}}</h3>
-      <p>{{vakdata.education.p}}</p>
+      <span>
+        <h3>{{vakdata.tech.title}}</h3>
+        <p ng-repeat="skill in vakdata.tech.section">
+            <strong>{{skill.header}}:</strong> {{skill.info}}
+        </p>
+      </span>
 
-      <h3>{{vakdata.tech.title}}</h3>
-      <p ng-repeat="skill in vakdata.tech.section">
-          <strong>{{skill.header}}:</strong> {{skill.info}}
-      </p>
+      <span>
+        <h3>{{vakdata.exp.title}}</h3>
+        <div ng-repeat="job in vakdata.exp.jobs">
 
-      <h3>{{vakdata.exp.title}}</h3>
-      <div ng-repeat="job in vakdata.exp.jobs">
+          <h4><strong>{{job.comp}}</strong></h4>
+          <p>{{job.pos}}</p>
+          <div ng-repeat="dut in job.duties">
+            <ul>
+              <li>{{dut}}</li>
+            </ul>
+          </div>
 
-        <h4><strong>{{job.comp}}</strong></h4>
-
-        <p>{{job.pos}}</p>
-
-        <div ng-repeat="dut in job.duties">
-          <ul>
-            <li>{{dut}}</li>
-          </ul>
         </div>
+      </span>
 
-      </div>
 
-      <h3>{{vakdata.trivia.title}}</h3>
-      <div ng-repeat="info in vakdata.trivia.hobbies">
-        <h4>{{info.fact}}</h4>
-        <p>{{info.info}}</p>
-        <div ng-repeat="item in info.peruList">
-          <ul>
-            <li>{{item}}</li>
-          </ul>
+
+      <span>
+        <h3>{{vakdata.trivia.title}}</h3>
+        <div ng-repeat="info in vakdata.trivia.hobbies">
+          <h4>{{info.fact}}</h4>
+          <p>{{info.info}}</p>
+          <div ng-repeat="item in info.peruList">
+            <ul>
+              <li>{{item}}</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </span>
+
 
 
 
