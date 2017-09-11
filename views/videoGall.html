@@ -1,17 +1,13 @@
 <div id="videos">
-  <span>
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe ng-src="{{url}}" class="embed-responsive-item" allowfullscreen></iframe>
-  </div>
-  </span>
-
+    <span>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe ng-src="{{url}}" class="embed-responsive-item" allowfullscreen></iframe>
+      </div>
+    </span>
 
     <div class="col-lg-4 col-sm-6 col-xs-12" ng-repeat="pic in files">
-
       <div class="thumbnail">
-
         <img ng-src="{{pic.url}}" id="{{$index}}" ng-click="changeVid($index)" class="hvr-grow"/>
-
     </div>
     <h3>{{pic.title}}</h3>
     <p>{{pic.cap}}</p>
