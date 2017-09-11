@@ -22,7 +22,6 @@ nav {
   border-top: 3px solid $primaryColor !important;
   box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
   height: 100px;
-
   #extLinks {
     padding-left: 7px;
     padding-top: 10px;
@@ -98,23 +97,9 @@ nav {
   }
   .in {
     border-bottom: 2px solid rgba(255, 95, 20, .9);
-
-  }
-}
-
-@media (max-width: 1060px) {
-  .navbar-brand {
-    visibility: hidden;
-  }
-}
-@media (max-width: 766px) {
-  .navbar-nav {
-    padding-top: 40px;
-    // box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
-    // border-bottom: 2px solid rgba(255, 95, 20, .9);
   }
   #extLinks {
-    visibility: hidden;
+    // visibility: hidden;
   }
 }
 
@@ -191,6 +176,10 @@ nav {
       font-size: 1.3em;
       text-decoration: underline;
     }
+    span {
+      margin-bottom: 50px;
+      display: block;
+    }
   }
   #techList {
     margin-top: 20px;
@@ -214,7 +203,7 @@ nav {
 #mainContent {
   padding: 0 50px;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 140px auto 0 auto;
   art-disp {
     div {
     	background:black;
@@ -302,13 +291,34 @@ nav {
     }
   }
 }
+//video gallery
 #videos {
   flex: 1;
+  margin-top: 140px;
+  span {
+    display: block;
+    background-color: black;
+    max-height: 600px;
+  }
+  .embed-responsive {
+    width: 70%;
+    max-width: 800px;
+    margin: 20px auto;
+    .embed-responsive-item {
+      width: 100%;
+      max-height: 600px;
+
+    }
+  }
+  .col-xs-12 {
+    padding: 50px;
+  }
   .thumbnail {
     height: 275px;
     outline: 0;
     border: none;
     position: relative;
+    cursor: pointer;
     img {
       object-fit: cover;
       height: 265px;
@@ -331,7 +341,7 @@ nav {
   min-width: 500px;
   max-width: 800px;
   width: auto;
-  margin: 0 auto;
+  margin: 140px auto 0 auto;
   font-size: 16px;
   line-height: 1.5em;
   .wrapper {
@@ -408,13 +418,15 @@ nav {
     }
   }
 }
-#success { text-align: center; }
+#success {
+  margin-top: 150px;
+  text-align: center; }
 
 
 .viewFade {
   margin-top: 140px;
-  -webkit-animation: fadein .2s linear forwards;
-  animation: fadein .2s linear forwards;
+  -webkit-animation: fadein .3s linear forwards;
+  animation: fadein .3s linear forwards;
 }
 @keyframes fadein {
   0% { opacity: 0; }
@@ -510,5 +522,20 @@ nav {
   color: black;
   i {
     color: $primaryColor;
+  }
+}
+
+@media (max-width: 1060px) {
+  .navbar-brand {
+    visibility: hidden;
+  }
+
+}
+@media (max-width: 766px) {
+  .navbar-nav {
+    padding-top: 40px;
+  }
+  #extLinks {
+    visibility: hidden;
   }
 }
