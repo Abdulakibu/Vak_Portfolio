@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-/* line 5, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -454,6 +454,10 @@ nav div ul li a i {
   margin: 140px auto 0 auto;
 }
 /* line 312, ../sass/screen.scss */
+#contactPage h6, #contactPage h4 {
+  text-align: center;
+}
+/* line 313, ../sass/screen.scss */
 #contactPage .wrapper {
   height: 600px;
   display: grid;
@@ -461,7 +465,7 @@ nav div ul li a i {
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-/* line 318, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 #contactPage .wrapper .one {
   min-width: 220px;
   grid-column: 1;
@@ -470,32 +474,32 @@ nav div ul li a i {
   float: right;
   overflow: auto;
 }
-/* line 325, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 #contactPage .wrapper .one input {
   width: 200px;
 }
-/* line 326, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #contactPage .wrapper .one div {
   width: auto;
   text-align: center;
   display: block;
   overflow: auto;
 }
-/* line 331, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 #contactPage .wrapper .one div form {
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
-/* line 335, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 #contactPage .wrapper .one div form .invalid {
   border: 2px solid red !important;
 }
-/* line 336, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #contactPage .wrapper .one div form .valid {
   border: 2px solid lightgreen !important;
 }
-/* line 337, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #contactPage .wrapper .one div form .errorMessage {
   height: 35px;
   font-size: .8em;
@@ -503,7 +507,7 @@ nav div ul li a i {
   display: block;
   margin: 0 auto;
 }
-/* line 347, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #contactPage .wrapper .two {
   min-width: 220px;
   grid-column: 2;
@@ -511,7 +515,7 @@ nav div ul li a i {
   display: block;
   padding-right: 30px;
 }
-/* line 354, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox {
   border-radius: 2px;
   height: auto;
@@ -526,16 +530,16 @@ nav div ul li a i {
   display: block;
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
 }
-/* line 367, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox button {
   margin-bottom: 20px;
 }
-/* line 368, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #preview {
   padding: 10px 25px;
   background-color: rgba(200, 200, 200, 0.1);
 }
-/* line 372, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title {
   width: auto;
   height: 40px;
@@ -546,7 +550,7 @@ nav div ul li a i {
   margin-left: 25px;
   text-align: left;
 }
-/* line 381, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title i {
   color: lightgreen;
   font-size: 25px;
@@ -556,13 +560,13 @@ nav div ul li a i {
   right: 10px;
 }
 
-/* line 394, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #success {
   margin-top: 150px;
   text-align: center;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .viewFade {
   margin-top: 140px;
   -webkit-animation: fadein .3s linear forwards;
@@ -580,39 +584,39 @@ nav div ul li a i {
     opacity: 1;
   }
 }
-/* line 409, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .about {
   opacity: 0;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .about.animated {
   animation-name: intro;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-/* line 417, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .about.animated:nth-child(2) {
   animation-delay: .3s;
 }
 
-/* line 418, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .about.animated:nth-child(3) {
   animation-delay: 1.8s;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .about.animated:nth-child(4) {
   animation-delay: 3.5s;
 }
 
-/* line 421, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .list {
   opacity: 0;
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .list.animated {
   animation-name: fadeInDown;
   animation-duration: 1s;
@@ -620,52 +624,52 @@ nav div ul li a i {
   animation-fill-mode: forwards;
 }
 
-/* line 430, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .list.animated:nth-child(2) {
   animation-delay: 5.6s;
 }
 
-/* line 431, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .list.animated:nth-child(3) {
   animation-delay: 6.2s;
 }
 
-/* line 432, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .list.animated:nth-child(4) {
   animation-delay: 6.8s;
 }
 
-/* line 433, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .list.animated:nth-child(5) {
   animation-delay: 7.4s;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .list.animated:nth-child(6) {
   animation-delay: 8.0s;
 }
 
-/* line 435, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .list.animated:nth-child(7) {
   animation-delay: 8.6s;
 }
 
-/* line 436, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .list.animated:nth-child(8) {
   animation-delay: 9.2s;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .list.animated:nth-child(9) {
   animation-delay: 9.8s;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .list.animated:nth-child(10) {
   animation-delay: 10.4s;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .list.animated:nth-child(11) {
   animation-delay: 11.0s;
 }
@@ -690,7 +694,7 @@ nav div ul li a i {
     transform: none;
   }
 }
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -702,14 +706,14 @@ nav div ul li a i {
   transition-property: transform;
 }
 
-/* line 472, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
 }
 
-/* line 479, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -724,30 +728,30 @@ nav div ul li a i {
   transition-timing-function: ease-out;
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
   color: black;
 }
-/* line 496, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .hvr-float:hover i, .hvr-float:focus i, .hvr-float:active i {
   color: #ff5f14;
 }
 
 @media (max-width: 1060px) {
-  /* line 502, ../sass/screen.scss */
+  /* line 503, ../sass/screen.scss */
   .navbar-brand {
     visibility: hidden;
   }
 }
 @media (max-width: 766px) {
-  /* line 508, ../sass/screen.scss */
+  /* line 509, ../sass/screen.scss */
   .navbar-nav {
     padding-top: 40px;
   }
 
-  /* line 511, ../sass/screen.scss */
+  /* line 512, ../sass/screen.scss */
   #extLinks {
     visibility: hidden;
   }
