@@ -84,7 +84,23 @@ nav {
     }
   }
 }
-
+@media (max-width: 650px) {
+  #aboutMe {
+    font-size: 1em !important;
+    min-width: 300px !important;
+    h1, div {
+      margin: 0 auto !important;
+      min-width: 300px !important;
+    }
+  }
+  #aboutBox {
+    padding: 5px !important;
+    font-size: 70%;
+  }
+  .selfie {
+    height: 20% !important;
+  }
+}
 // homepage
 #bg {
   border-bottom: 3px solid $primaryColor;
@@ -92,12 +108,15 @@ nav {
   #aboutMe {
     width: 100%;
     min-height: 600px;
-    min-width: 600px;
-    font-size: 16px;
+    min-width: 300px;
+    font-size: 1.2em;
     position: relative;
     padding: 50px 50px 50px 25%;
     margin: 0 auto;
     color: hsl(19, 17%, 99%);
+    h1, div {
+      margin-left: 20%;
+    }
     ul { padding: 0; }
   }
   #summary {
@@ -110,7 +129,7 @@ nav {
     color: black;
     #aboutBox {
       height: 150px;
-      min-width: 460px;
+      min-width: 300px;
       line-height: 13px;
       text-align: center;
       padding: 10px;
@@ -119,7 +138,7 @@ nav {
       box-shadow: 0 3px 5px rgba(100, 100, 100, .5);
       h2 { color: black; }
       p {
-        font-size: 14px;
+        font-size: 1em;
         opacity: .8;
       }
       span {
@@ -129,7 +148,7 @@ nav {
     }
   }
   #essay {
-    min-width: 500px;
+    min-width: 300px;
     margin-top: 30px;
     padding: 5px;
     color: black;
@@ -159,6 +178,7 @@ nav {
 }
 .selfie {
   height: 80vh;
+  min-height: 300px;
   position: relative;
   top: -43px;
   background: linear-gradient(
@@ -180,7 +200,7 @@ nav {
       height: auto;
       width: 100%;
       max-height: 700px;
-      min-width: 500px;
+      min-width: 300px;
     	text-align: center;
     	position: relative;
       margin-bottom: 20px;
@@ -200,7 +220,7 @@ nav {
       .zoom img::selection { background-color: transparent; }
       img {
         height: auto;
-        width: 100%;
+        width: 90%;
         min-height: 300px;
         max-height: 600px;
         display: inline-block;
@@ -223,6 +243,8 @@ nav {
         color: #ff5f14;
         background-color: white;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        &:focus { box-shadow: none;}
+
       }
     }
   }
@@ -233,9 +255,11 @@ nav {
       position: relative;
       outline: 0;
       border: none;
+      cursor: pointer;
       img {
         height: 265px;
         width: 180%;
+        min-width: 250px;
         text-align: center;
         padding: 3px;
         position: absolute;
@@ -341,6 +365,11 @@ nav {
             text-align:center;
             display: block;
             margin: 0 auto;
+          }
+          span {
+            float: right;
+            font-size: .7em;
+            font-weight: 400;
           }
         }
       }
