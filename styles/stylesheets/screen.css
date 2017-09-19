@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-/* line 5, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Downloads/compass.app.windows.1.29/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -174,54 +174,31 @@ nav div ul li a i {
   margin-right: 5px;
 }
 
-@media (max-width: 650px) {
-  /* line 88, ../sass/screen.scss */
-  #aboutMe {
-    font-size: 1em !important;
-    min-width: 300px !important;
-  }
-  /* line 91, ../sass/screen.scss */
-  #aboutMe h1, #aboutMe div {
-    margin: 0 auto !important;
-    min-width: 300px !important;
-  }
-
-  /* line 96, ../sass/screen.scss */
-  #aboutBox {
-    padding: 5px !important;
-    font-size: 70%;
-  }
-
-  /* line 100, ../sass/screen.scss */
-  .selfie {
-    height: 20% !important;
-  }
-}
-/* line 105, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #bg {
   border-bottom: 3px solid #ff5f14;
   outline: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 108, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #bg #aboutMe {
   width: 100%;
   min-height: 600px;
   min-width: 300px;
-  font-size: 1.2em;
+  font-size: 1em;
   position: relative;
-  padding: 50px 50px 50px 25%;
+  padding: 20px 50px 50px 25%;
   margin: 0 auto;
   color: #fdfcfc;
 }
-/* line 117, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 #bg #aboutMe h1, #bg #aboutMe div {
   margin-left: 20%;
 }
-/* line 120, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 #bg #aboutMe ul {
   padding: 0;
 }
-/* line 122, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #bg #summary {
   font-size: 1.3em;
   width: 60%;
@@ -231,7 +208,7 @@ nav div ul li a i {
   top: -120px;
   color: black;
 }
-/* line 130, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #bg #summary #aboutBox {
   height: 150px;
   min-width: 300px;
@@ -242,62 +219,62 @@ nav div ul li a i {
   background-color: white;
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
 }
-/* line 139, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 #bg #summary #aboutBox h2 {
   color: black;
 }
-/* line 140, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 #bg #summary #aboutBox p {
-  font-size: 1em;
+  font-size: 90%;
   opacity: .8;
 }
-/* line 144, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 #bg #summary #aboutBox span {
   font-weight: bold;
   color: black;
 }
-/* line 150, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #bg #essay {
   min-width: 300px;
   margin-top: 30px;
   padding: 5px;
   color: black;
 }
-/* line 155, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #bg #essay h3 {
   font-size: 2.5em;
 }
-/* line 156, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #bg #essay ul {
   line-height: 23px;
   padding-left: 20px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 #bg #essay ul li {
   padding-left: 5px;
   list-style-type: square;
 }
-/* line 164, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #bg #essay h4 {
   font-size: 1.3em;
   text-decoration: underline;
   margin-top: 20px;
 }
-/* line 169, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 #bg #essay span {
   margin-bottom: 50px;
   display: block;
 }
-/* line 174, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #bg #techList {
   margin-top: 20px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #bg #techList ul {
   padding: 0 20px;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .selfie {
   height: 80vh;
   min-height: 300px;
@@ -308,13 +285,13 @@ nav div ul li a i {
   background-position: center center;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 #mainContent {
   max-width: 1300px;
   padding: 0 50px;
   margin: 140px auto 0 auto;
 }
-/* line 199, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #mainContent art-disp div {
   height: auto;
   width: 100%;
@@ -329,32 +306,32 @@ nav div ul li a i {
   overflow: auto;
   object-fit: contain;
 }
-/* line 212, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #mainContent art-disp div #left {
   left: 0;
 }
-/* line 213, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 #mainContent art-disp div #right {
   right: 0;
 }
-/* line 214, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #mainContent art-disp div #ex1 {
   width: 80%;
 }
-/* line 215, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 #mainContent art-disp div .zoom {
   display: inline-block;
   position: relative;
 }
-/* line 219, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #mainContent art-disp div .zoom img {
   display: inline-block;
 }
-/* line 220, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 #mainContent art-disp div .zoom img::selection {
   background-color: transparent;
 }
-/* line 221, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #mainContent art-disp div img {
   height: auto;
   width: 90%;
@@ -365,7 +342,7 @@ nav div ul li a i {
   object-fit: contain;
   overflow: auto;
 }
-/* line 231, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #mainContent art-disp div button {
   height: 100%;
   width: 40px;
@@ -382,15 +359,15 @@ nav div ul li a i {
   background-color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-/* line 246, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #mainContent art-disp div button:focus {
   box-shadow: none;
 }
-/* line 251, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #mainContent art-gall {
   flex: 1;
 }
-/* line 253, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #mainContent art-gall .thumbnail {
   height: 275px;
   position: relative;
@@ -398,7 +375,7 @@ nav div ul li a i {
   border: none;
   cursor: pointer;
 }
-/* line 259, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 #mainContent art-gall .thumbnail img {
   height: 265px;
   width: 180%;
@@ -413,43 +390,43 @@ nav div ul li a i {
   box-shadow: 0 3px 10px rgba(100, 100, 100, 0.5);
   object-fit: cover;
 }
-/* line 274, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 #mainContent art-gall button {
   width: 100%;
   font-size: 1.5em;
   border: 1px solid #ff5f14;
   margin-bottom: 30px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 #mainContent art-gall button:focus {
   outline: none;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 #videos {
   flex: 1;
   max-width: 1300px;
   margin: 140px auto 0 auto;
   padding: 0 50px;
 }
-/* line 290, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 #videos span {
   max-height: 600px;
   display: block;
   background-color: black;
 }
-/* line 295, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 #videos .embed-responsive {
   width: 70%;
   max-width: 800px;
   margin: 20px auto;
 }
-/* line 299, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #videos .embed-responsive .embed-responsive-item {
   width: 100%;
   max-height: 600px;
 }
-/* line 304, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #videos .thumbnail {
   height: 275px;
   position: relative;
@@ -457,7 +434,7 @@ nav div ul li a i {
   border: none;
   cursor: pointer;
 }
-/* line 310, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #videos .thumbnail img {
   height: 265px;
   width: 180%;
@@ -472,12 +449,12 @@ nav div ul li a i {
   object-fit: cover;
 }
 
-/* line 327, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 #instructions {
   text-align: center;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #contactPage {
   min-width: 500px;
   max-width: 900px;
@@ -487,11 +464,11 @@ nav div ul li a i {
   padding: 0 50px;
   margin: 140px auto 0 auto;
 }
-/* line 336, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 #contactPage h6, #contactPage h4 {
   text-align: center;
 }
-/* line 337, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #contactPage .wrapper {
   height: 600px;
   display: grid;
@@ -499,7 +476,7 @@ nav div ul li a i {
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-/* line 343, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #contactPage .wrapper .one {
   min-width: 220px;
   grid-column: 1;
@@ -508,32 +485,32 @@ nav div ul li a i {
   float: right;
   overflow: auto;
 }
-/* line 350, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 #contactPage .wrapper .one input {
   width: 200px;
 }
-/* line 351, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #contactPage .wrapper .one div {
   width: auto;
   text-align: center;
   display: block;
   overflow: auto;
 }
-/* line 356, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 #contactPage .wrapper .one div form {
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
-/* line 360, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 #contactPage .wrapper .one div form .invalid {
   border: 2px solid red !important;
 }
-/* line 361, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #contactPage .wrapper .one div form .valid {
   border: 2px solid lightgreen !important;
 }
-/* line 362, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #contactPage .wrapper .one div form .errorMessage {
   height: 35px;
   font-size: .8em;
@@ -541,13 +518,13 @@ nav div ul li a i {
   display: block;
   margin: 0 auto;
 }
-/* line 369, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #contactPage .wrapper .one div form span {
   float: right;
   font-size: .7em;
   font-weight: 400;
 }
-/* line 377, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 #contactPage .wrapper .two {
   min-width: 220px;
   grid-column: 2;
@@ -555,7 +532,7 @@ nav div ul li a i {
   display: block;
   padding-right: 30px;
 }
-/* line 384, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox {
   border-radius: 2px;
   height: auto;
@@ -570,16 +547,16 @@ nav div ul li a i {
   display: block;
   box-shadow: 0 3px 5px rgba(100, 100, 100, 0.5);
 }
-/* line 397, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox button {
   margin-bottom: 20px;
 }
-/* line 398, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #preview {
   padding: 10px 25px;
   background-color: rgba(200, 200, 200, 0.1);
 }
-/* line 402, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title {
   width: auto;
   height: 40px;
@@ -590,7 +567,7 @@ nav div ul li a i {
   margin-left: 25px;
   text-align: left;
 }
-/* line 411, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 #contactPage .wrapper .two #previewBox #title i {
   color: lightgreen;
   font-size: 25px;
@@ -600,13 +577,13 @@ nav div ul li a i {
   right: 10px;
 }
 
-/* line 424, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 #success {
   margin-top: 150px;
   text-align: center;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .viewFade {
   margin-top: 140px;
   -webkit-animation: fadein .3s linear forwards;
@@ -624,39 +601,39 @@ nav div ul li a i {
     opacity: 1;
   }
 }
-/* line 439, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .about {
   opacity: 0;
 }
 
-/* line 442, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .about.animated {
   animation-name: intro;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-/* line 447, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .about.animated:nth-child(2) {
   animation-delay: .3s;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .about.animated:nth-child(3) {
   animation-delay: 1.8s;
 }
 
-/* line 449, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .about.animated:nth-child(4) {
   animation-delay: 3.5s;
 }
 
-/* line 451, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 .list {
   opacity: 0;
 }
 
-/* line 454, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .list.animated {
   animation-name: fadeInDown;
   animation-duration: 1s;
@@ -664,52 +641,52 @@ nav div ul li a i {
   animation-fill-mode: forwards;
 }
 
-/* line 460, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .list.animated:nth-child(2) {
   animation-delay: 5.6s;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 .list.animated:nth-child(3) {
   animation-delay: 6.2s;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .list.animated:nth-child(4) {
   animation-delay: 6.8s;
 }
 
-/* line 463, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .list.animated:nth-child(5) {
   animation-delay: 7.4s;
 }
 
-/* line 464, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 .list.animated:nth-child(6) {
   animation-delay: 8.0s;
 }
 
-/* line 465, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 .list.animated:nth-child(7) {
   animation-delay: 8.6s;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .list.animated:nth-child(8) {
   animation-delay: 9.2s;
 }
 
-/* line 467, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .list.animated:nth-child(9) {
   animation-delay: 9.8s;
 }
 
-/* line 468, ../sass/screen.scss */
+/* line 452, ../sass/screen.scss */
 .list.animated:nth-child(10) {
   animation-delay: 10.4s;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 .list.animated:nth-child(11) {
   animation-delay: 11.0s;
 }
@@ -734,7 +711,7 @@ nav div ul li a i {
     transform: none;
   }
 }
-/* line 492, ../sass/screen.scss */
+/* line 476, ../sass/screen.scss */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -746,14 +723,14 @@ nav div ul li a i {
   transition-property: transform;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 486, ../sass/screen.scss */
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
 }
 
-/* line 509, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
@@ -768,31 +745,56 @@ nav div ul li a i {
   transition-timing-function: ease-out;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
   color: black;
 }
-/* line 526, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .hvr-float:hover i, .hvr-float:focus i, .hvr-float:active i {
   color: #ff5f14;
 }
 
 @media (max-width: 1060px) {
-  /* line 532, ../sass/screen.scss */
+  /* line 516, ../sass/screen.scss */
   .navbar-brand {
     visibility: hidden;
   }
 }
 @media (max-width: 766px) {
-  /* line 538, ../sass/screen.scss */
+  /* line 522, ../sass/screen.scss */
   .navbar-nav {
     padding-top: 40px;
   }
 
-  /* line 541, ../sass/screen.scss */
+  /* line 525, ../sass/screen.scss */
   #extLinks {
     visibility: hidden;
+  }
+}
+@media (max-width: 690px) {
+  /* line 531, ../sass/screen.scss */
+  #aboutMe h1, #aboutMe h3, #aboutMe div {
+    min-width: 300px !important;
+  }
+
+  /* line 533, ../sass/screen.scss */
+  #aboutBox {
+    height: 110px !important;
+    padding: 3px !important;
+  }
+  /* line 536, ../sass/screen.scss */
+  #aboutBox h2 {
+    font-size: 1.2em;
+  }
+  /* line 537, ../sass/screen.scss */
+  #aboutBox p {
+    font-size: .7em !important;
+  }
+
+  /* line 539, ../sass/screen.scss */
+  .selfie {
+    height: 20% !important;
   }
 }
