@@ -1,21 +1,21 @@
 //controller for art gallery and navbar
 app.controller('artController', ['$scope', '$http', '$location', '$window', '$timeout', '$route', function ($scope, $http, $location, $window, $timeout, $route) {
-
+  var screenWidth = window.innerWidth;
   var i = 1;
   //initially only load 8 thumbnails in art gall
   $scope.limit = 8;
   //display load button by default
   $scope.loadBtn = true;
   //select random number for img to be displayed on page load
-  var imgNum = Math.floor(Math.random() * 49 + 1);
+  var imgNum = Math.floor(Math.random() * 49);
   //empty array, gets loaded with drawing file URLs
   $scope.drawings = [];
+  $scope.drawingsM = [];
   //select img to be displayed based off random number earlier
-  $scope.image = "drawings/" + imgNum + ".jpg";
 
   //fill drawings array with all URLs
   loadDrawings();
-
+  $scope.image = $scope.drawings[imgNum+1]
 
   //backward/forward buttons in image display
   $scope.left = function() {
@@ -30,9 +30,12 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
       $(document).ready(function(){
           $('#ex1').zoom();
       });
-
       imgNum--;
-      $scope.image = "drawings/" + imgNum + ".jpg";
+      if (window.innerWidth < 700){
+        $scope.image = $scope.drawingsM[imgNum-1]
+      } else {
+        $scope.image = $scope.drawings[imgNum-1]
+      }
   }
 
 
@@ -50,7 +53,11 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
       });
 
       imgNum++;
-      $scope.image = "drawings/" + imgNum + ".jpg";
+      if (window.innerWidth < 700){
+        $scope.image = $scope.drawings[imgNum-1]
+      } else {
+        $scope.image = $scope.drawings[imgNum-1]
+      }
   }
 
 
@@ -66,7 +73,11 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
 
       //arrays start at 0, but img names start at 1
       imgNum = index + 1;
-      $scope.image = "drawings/" + (index+1) + ".jpg";
+      if (window.innerWidth < 700){
+        $scope.image = $scope.drawings[imgNum-1]
+      } else {
+        $scope.image = $scope.drawings[imgNum-1]
+      }
       $window.scrollTo(0, 0);
   }
 
@@ -83,8 +94,10 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
   function loadDrawings() {
       while(i < 50) {
           drawing = "drawings/" + i + ".jpg";
+          drawingM = "drawings/Mobile/" + i + ".jpg";
           i++;
           $scope.drawings.push(drawing);
+          $scope.drawingsM.push(drawingM);
       }
   }
 

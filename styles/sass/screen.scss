@@ -15,7 +15,7 @@ body {
 nav {
   height: 100px;
   width: auto;
-  min-width: 500px;
+  min-width: 300px;
   font-size: 1.3em;
   letter-spacing: 1px;
   border-top: 3px solid $primaryColor !important;
@@ -98,9 +98,7 @@ nav {
     padding: 20px 50px 50px 25%;
     margin: 0 auto;
     color: hsl(19, 17%, 99%);
-    h1, div {
-      margin-left: 20%;
-    }
+    h1, div { margin-left: 10%; }
     ul { padding: 0; }
   }
   #summary {
@@ -310,7 +308,7 @@ nav {
 //contact page
 #instructions { text-align: center; }
 #contactPage {
-  min-width: 500px;
+  min-width: 300px;
   max-width: 900px;
   width: auto;
   font-size: 1.5em;
@@ -325,13 +323,16 @@ nav {
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     .one {
-      min-width: 220px;
+      min-width: 150px;
       grid-column: 1;
       grid-row: 1;
       display: block;
       float: right;
       overflow: auto;
-      input { width: 200px; }
+      input {
+        max-width: 200px;
+        min-width: 150px;
+      }
       div {
         width: auto;
         text-align: center;
@@ -359,12 +360,11 @@ nav {
       }
     }
     .two {
-      min-width: 220px;
+      min-width: 150px;
       grid-column: 2;
       grid-row: 1;
       display: block;
       padding-right: 30px;
-
       #previewBox {
         border-radius: 2px;
         height: auto;
@@ -407,7 +407,8 @@ nav {
 }
 #success {
   margin-top: 150px;
-  text-align: center; }
+  text-align: center;
+}
 
 
 .viewFade {
@@ -522,12 +523,18 @@ nav {
   .navbar-nav {
     padding-top: 40px;
   }
+  .navbar-brand {
+    visibility: visible;
+    font-size: 1.1em !important;
+    letter-spacing: 3px !important;
+  }
   #extLinks {
     visibility: hidden;
   }
 }
 @media (max-width: 690px) {
   #aboutMe {
+    min-width: 300px !important;
     h1, h3, div { min-width: 300px !important; }
   }
   #aboutBox {
@@ -537,4 +544,7 @@ nav {
     p { font-size: .7em !important}
   }
   .selfie { height: 20% !important; }
+  #preview {
+    font-size: .7em;
+  }
 }
