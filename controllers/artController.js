@@ -79,7 +79,6 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
       }
   }
 
-
   //load all drawings in folder
   function loadDrawings() {
       while(i < 50) {

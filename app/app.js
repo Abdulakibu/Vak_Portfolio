@@ -1,6 +1,7 @@
 var app = angular.module('app', ['ngRoute', 'ngMessages']);
 
-app.config(['$routeProvider', function($routeProvider) {
+
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/home', {
         templateUrl: 'views/about.html',
@@ -26,5 +27,15 @@ app.config(['$routeProvider', function($routeProvider) {
         redirectTo: 'home'
       })
 
+      // $locationProvider.html5Mode({
+      //   enabled: true,
+      //   requireBase: false
+      // });
+      $locationProvider.hashPrefix('');
 
-  }]);
+
+  }
+
+  
+
+]);

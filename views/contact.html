@@ -1,11 +1,13 @@
 <script type="text/ng-template" id="error-messages">
   <div ng-message="required">This field is required</div>
-  <div ng-message="minlength">This field is too short</div>
+  <!-- <div ng-message="minlength">This field is too short</div> -->
   <div ng-message="email">Please enter a valid email</div>
 </script>
 
 <div id="contactPage" class="viewFade">
-  <h4 id="instructions">Would you like to send me a message? Fillout this form!</h4>
+  <h4 id="instructions">Would you like to send me a message? Fillout this form!
+  <h6>For demo purposes only</h6></h4>
+
 
   <div class="wrapper">
     <div class="one">
@@ -21,7 +23,6 @@
             ng-class="{'invalid': (form.first.$error && form.first.$touched), 'valid': (form.first.$valid && form.first.$touched)}"
             class="form-control"
             ng-model="formData.firstName"
-            ng-minlength="2"
             maxlength="20"
             required>
             </label>
@@ -41,7 +42,6 @@
             ng-class="{'invalid': (form.last.$error && form.last.$touched), 'valid': (form.last.$valid && form.last.$touched)}"
             class="form-control"
             ng-model="formData.lastName"
-            ng-minlength="2"
             maxlength="20"
             required>
           </label>
@@ -84,6 +84,8 @@
           cols="30"
           required>
           </textarea>
+          <span id="charCount">{{1000-formData.contactMessage.length}} characters left</span>
+
           </label>
 
           <div class="errorMessage">
@@ -110,7 +112,7 @@
         From: <strong>{{formData.firstName}} {{formData.lastName}}</strong>
       </p>
       <p>
-        Contact at <strong>{{formData.contactEmail}}</strong>
+        Contact at: <strong>{{formData.contactEmail}}</strong>
       </p>
       <p>
         Message: <strong>{{formData.contactMessage}}</strong>
