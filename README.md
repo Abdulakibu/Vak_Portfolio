@@ -1,8 +1,6 @@
 # Vak_Portfolio
-An art portfolio I created to demonstrate what kind of web developer I am
+A resume website I created to demonstrate my skill-set as a web developer
 
-
-Currently still in development. 
 I built it from scratch using the following technologies:
 <ul>
   <li>AngularJS</li>
@@ -17,3 +15,5 @@ I built it from scratch using the following technologies:
   <li>CSS</li>
   <li>HTML</li>
 </ul>
+
+You can view it at <a href="http://www.getvakjob.com">getvakjob.com</a>
