@@ -15,7 +15,7 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
 
   //fill drawings array with all URLs
   loadDrawings();
-  $scope.image = $scope.drawings[imgNum+1]
+  $scope.image = $scope.drawings[imgNum-1]
 
   //backward/forward buttons in image display
   $scope.left = function() {
@@ -23,19 +23,20 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
       $('#ex1').trigger('zoom.destroy');
 
       if(imgNum === 1) {
-          imgNum = 50;
+          imgNum = 49;
       }
 
-      //start zoom to use new img src
-      $(document).ready(function(){
-          $('#ex1').zoom();
-      });
-      imgNum--;
+      imgNum-=1;
+
       if (window.innerWidth < 700){
         $scope.image = $scope.drawingsM[imgNum-1]
       } else {
         $scope.image = $scope.drawings[imgNum-1]
       }
+
+      $(document).ready(function(){
+          $('#ex1').zoom();
+      });
   }
 
 
@@ -43,21 +44,21 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
       //stop zoom to allow img change
       $('#ex1').trigger('zoom.destroy');
 
-      if(imgNum === 49) {
+      if(imgNum === 48) {
           imgNum = 0;
       }
 
-      //start zoom to use new img src
-      $(document).ready(function(){
-          $('#ex1').zoom();
-      });
+      imgNum+=1;
 
-      imgNum++;
       if (window.innerWidth < 700){
         $scope.image = $scope.drawings[imgNum-1]
       } else {
         $scope.image = $scope.drawings[imgNum-1]
       }
+
+      $(document).ready(function(){
+          $('#ex1').zoom();
+      });
   }
 
 
@@ -92,7 +93,7 @@ app.controller('artController', ['$scope', '$http', '$location', '$window', '$ti
 
   //load all drawings in folder
   function loadDrawings() {
-      while(i < 50) {
+      while(i < 49) {
           drawing = "drawings/" + i + ".jpg";
           drawingM = "drawings/Mobile/" + i + ".jpg";
           i++;
